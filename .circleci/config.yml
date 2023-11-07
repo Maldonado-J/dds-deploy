@@ -15,7 +15,9 @@ executors:
         auth:
           username: $DOCKERHUB_USERNAME
           password: $DOCKERHUB_PASSWORD
-
+  java17:
+    docker:
+      - image: 'cimg/openjdk:17.0'
 
 jobs:
   publishLatestToHub:
